@@ -8,3 +8,10 @@ apache-service:
   service.running:
     - enable: True
     - name: {{ apache.service }}
+    - watch: 
+      - file: apache-config
+
+apache-config:
+  file.managed:
+    - name: {{ apache.config }}
+    - source: salt://apache/files/httpd.conf
