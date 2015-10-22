@@ -2,11 +2,25 @@
 
 A set of salt-states for making a very insecure operating system.
 
-I do not recommend putting this in a trusted network.
+COALFIRE ASSUMES NO RISK FOR YOUR USE OF THIS PRODUCT.
+THIS SHOULD NEVER BE DEPLOYED ON A PRODUCTION SYSTEM. 
+IT IS DELIBERATELY BROKEN.
+IT IS INTENDED FOR TESTING USE ONLY.
+YOU HAVE BEEN WARNED.
+
+I strongly recommend not putting this in a trusted network.
 
 There are other, more comprehensive ways of making an insecure machine.
 One example is 
 [metasploitable](https://information.rapid7.com/metasploitable-download.html).
+
+This set of states is primarily oriented toward adding services,
+especially deprecated ones such as rsh.
+It does perform a bit of misconfiguration,
+such as enabling ssh protocol 1.
+
+It is not well-tested - some of the states may fail.
+Don't much maintenance on this project.
 
 ## Installation
 
@@ -22,6 +36,10 @@ Or you can always just copy the states you want to your salt directory.
 
 ## Available States
 
-`ssh`: configure sshd in an insecure manner.
-`telnet`: add a telnet server
-`iptables`: open up your firewall to everything
+`state.highstate` will add all of the bad stuff.
+for individual `state.sls` states, see the `salt` directory.
+
+## License
+MIT.
+
+
