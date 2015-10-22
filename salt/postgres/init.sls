@@ -4,5 +4,5 @@ postgres-package:
 
 postgres-service:
   service.running:
-    - name: postgres
+    - name: postgresql
     - enable: True
