@@ -1,0 +1,19 @@
+{% set iptables = salt['grains.filter_by']({
+  'RedHat': { 
+    'package': 'iptables',
+    'rulesfile': '/etc/sysconfig/iptables',
+    'service': 'iptables'
+  },
+  'Debian': {
+    'package': 'iptables-persistent',
+    'rulesfile': '/etc/iptables/rules.v4',
+    'service': 'iptables-persistent'
+  }
+}, merge=salt['grains.filter_by']({
+  'CentOS Linux-7': { 
+    'package': 'iptables-services',
+    'rulesfile': '/etc/sysconfig/iptables',
+    'service': 'iptables'
+  }, 
+},grain='osfinger')
+) %}
