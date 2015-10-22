@@ -13,3 +13,4 @@ base:
     - svn
     - smb
     - nfs
+    - sysstat
