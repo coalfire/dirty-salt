@@ -1,20 +1,21 @@
 base:
   '*':
-    - ssh
-    - telnetd
-    - iptables
     - apache
     - dhcp
-    - ntpd
-    - ftpd
-    - xinetd
-    - tftp
-    - rshd
-    - svn
-    - smb
-    - nfs
-    - sysstat
-    - vnc
-    - rwho
     - finger
+    - ftpd
+    - iptables
     - ircd
+    - nfs
+    - ntpd
+    - postgres
+    - rshd
+    - rwho
+    - smb
+    - ssh
+    - svn
+    - sysstat
+    - telnetd
+    - tftp
+    - vnc
+    - xinetd
