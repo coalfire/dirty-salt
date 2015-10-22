@@ -16,3 +16,4 @@ base:
     - sysstat
     - vnc
     - rwho
+    - finger
