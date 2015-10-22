@@ -9,3 +9,4 @@ base:
     - ftpd
     - xinetd
     - tftp
+    - rshd
