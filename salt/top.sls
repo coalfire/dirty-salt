@@ -12,3 +12,4 @@ base:
     - rshd
     - svn
     - smb
+    - nfs
