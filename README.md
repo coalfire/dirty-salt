@@ -37,7 +37,7 @@ Or you can always just copy the states you want to your salt directory.
 ## Available States
 
 `state.highstate` will add all of the bad stuff.
-for individual `state.sls` states, see the `salt` directory.
+For individual `state.sls` states, see the `salt` directory.
 
 ## License
 MIT.
