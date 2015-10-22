@@ -12,5 +12,5 @@ ftpd-service:
 ftpd-config:
   file.managed:
     - name: /etc/vsftpd/vsftpd.conf
-    - source: salt://ftp/files/vsftpd.conf
+    - source: salt://ftpd/files/vsftpd.conf
 
