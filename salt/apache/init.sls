@@ -6,9 +6,3 @@
 {{ apache.service }}:
   service.running:
     enable: True
-  #    watch:
-    #    - file: {{ apache.config }}
-
-#{{ apache.config }}:
-  #  file.managed:
-    #  - source: salt://apache/files/apache.conf
