@@ -5,3 +5,4 @@ base:
     - iptables
     - apache
     - dhcp
+    - ntpd

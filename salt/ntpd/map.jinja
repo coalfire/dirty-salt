@@ -1,0 +1,6 @@
+{% set ntpd = salt['grains.filter_by']({
+  'RedHat': { 'service': 'ntpd' },
+  'Debian': { 'service': 'ntp' },
+}
+) %}
+
