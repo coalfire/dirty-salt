@@ -9,6 +9,7 @@ base:
     - ldap
     - nfs
     - ntpd
+    - openvpn
     - postgres
     - rshd
     - rwho
