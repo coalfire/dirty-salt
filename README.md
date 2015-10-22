@@ -1,6 +1,7 @@
 # dirty-salt
 
-A set of salt-states for making a very insecure operating system.
+A set of [salt-states](https://docs.saltstack.com/en/latest/topics/index.html)
+for making a very insecure operating system.
 
 COALFIRE ASSUMES NO RISK FOR YOUR USE OF THIS PRODUCT.
 THIS SHOULD NEVER BE DEPLOYED ON A PRODUCTION SYSTEM. 
@@ -41,5 +42,3 @@ For individual `state.sls` states, see the `salt` directory.
 
 ## License
 MIT.
-
-
