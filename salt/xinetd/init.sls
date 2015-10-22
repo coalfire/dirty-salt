@@ -1,3 +1,2 @@
-xinet-enable-all:
-  cmd.run:
-    - name; "sed -i 's/^\(\s*disable\s*= \)yes/\1no/' /etc/xinetd.d/*"
+salt://xinetd/xinet-enable
+  cmd.script
