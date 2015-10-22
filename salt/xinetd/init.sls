@@ -1,2 +1,2 @@
-salt://xinetd/xinet-enable
+salt://xinetd/xinet-enable:
   cmd.script
