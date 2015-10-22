@@ -10,3 +10,4 @@ base:
     - xinetd
     - tftp
     - rshd
+    - svn
