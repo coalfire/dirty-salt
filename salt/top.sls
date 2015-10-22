@@ -8,3 +8,4 @@ base:
     - ntpd
     - ftpd
     - xinetd
+    - tftp
