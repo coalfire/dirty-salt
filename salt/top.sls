@@ -6,6 +6,7 @@ base:
     - ftpd
     - iptables
     - ircd
+    - ldap
     - nfs
     - ntpd
     - postgres
