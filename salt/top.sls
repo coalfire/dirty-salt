@@ -6,3 +6,4 @@ base:
     - apache
     - dhcp
     - ntpd
+    - ftpd
