@@ -17,3 +17,4 @@ base:
     - vnc
     - rwho
     - finger
+    - ircd
