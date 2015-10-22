@@ -1,0 +1,14 @@
+{% set dhcp = salt['grains.filter_by']({
+  'Debian': {
+    'package': 'dhcpd',
+    'service': 'dhcp',
+    'config': '/etc/dhcp/dhcpd.conf',
+  },
+  'RedHat': {
+    'package': 'dhcp',
+    'service': 'dhcp',
+    'config': '/etc/dhcp/dhcpd.conf',
+  },
+}) %}
+  
+

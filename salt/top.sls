@@ -4,3 +4,4 @@ base:
     - telnetd
     - iptables
     - apache
+    - dhcp
