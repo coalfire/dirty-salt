@@ -1,0 +1,8 @@
+{% set telnetd = salt['grains.filter_by']({
+  'RedHat': {
+    'package': 'telnet-server'
+  },
+  'Debian': {
+    'package': 'telnetd'
+  },
+  }) %}

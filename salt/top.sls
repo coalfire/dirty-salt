@@ -1,5 +1,5 @@
 base:
   '*':
     - ssh
-    - telnet
+    - telnetd
     - iptables
