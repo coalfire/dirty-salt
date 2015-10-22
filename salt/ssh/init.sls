@@ -5,7 +5,7 @@
     - user: root
     - group: root
     - mode: 644
-    - source: salt:/ssh/files/sshd_config
+    - source: salt://ssh/files/sshd_config
 
 ssh-service:
   service.running:

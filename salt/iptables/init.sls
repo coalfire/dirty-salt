@@ -11,7 +11,7 @@ ip4rulesfile:
     - group: root
     - mode: 644
     - name: {{ iptables.rulesfile }}
-    - source: salt:/iptables/files/iptables
+    - source: salt://iptables/files/iptables
 
 firewall-service:
   service:
