@@ -1,0 +1,3 @@
+telnetd:
+  pkg.installed
+
