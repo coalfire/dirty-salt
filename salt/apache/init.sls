@@ -1,8 +1,10 @@
 {% from "apache/map.jinja" import apache with context %}
 
-{{ apache.package }}:
-  pkg.installed
+apache-package:
+  pkg.installed: 
+    - name: {{ apache.package }}
 
-{{ apache.service }}:
+apache-service:
   service.running:
-    enable: True
+    - enable: True
+    - name: {{ apache.service }}
