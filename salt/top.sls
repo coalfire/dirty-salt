@@ -11,3 +11,4 @@ base:
     - tftp
     - rshd
     - svn
+    - smb
