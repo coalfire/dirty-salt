@@ -14,3 +14,4 @@ base:
     - smb
     - nfs
     - sysstat
+    - vnc
