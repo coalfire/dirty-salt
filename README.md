@@ -14,6 +14,8 @@ and make the minion use `localhost` as it's master.
 
 `make` or `make all` will do all of the above.
 
+Or you can always just copy the states you want to your salt directory.
+
 ## Available States
 
 `ssh`: configure sshd in an insecure manner.
