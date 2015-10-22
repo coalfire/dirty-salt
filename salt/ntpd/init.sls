@@ -2,7 +2,7 @@
 
 ntpd-package:
   pkg.installed: 
-    - name: {{ ntpd.package }}
+    - name: ntp
 
 ntpd-service:
   service.running:
