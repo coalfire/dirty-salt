@@ -15,3 +15,4 @@ base:
     - nfs
     - sysstat
     - vnc
+    - rwho
