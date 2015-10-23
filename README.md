@@ -20,24 +20,39 @@ especially deprecated ones such as rsh.
 It does perform a bit of misconfiguration,
 such as enabling ssh protocol 1.
 
+With CentOS 5.4, Nexpose 5.17.4 found 287 vulnerabilities, 90 of them unique.
+
 It is not well-tested - some of the states may fail.
 Don't much maintenance on this project.
 
 ## Installation
 
-`make install` will install the current stable version of salt-minion and
+Spin up an older CentOS or RHEL release -- CentOS 5.4 is what I have used.
+
+`git clone https://github.com/coalfire/dirty-salt`
+
+If you have chosen a sufficiently out of date distro, 
+you may be unable to clone due to outdated certs. 
+If so, `yum --showduplicates list openssl` to find what versions of openssl
+are available. 
+Install a slightly newer one with, eg:
+`yum install openssl-<new-version>`.
+
+`cd dirty-salt`
+
+`sudo make install` will install the current stable version of salt-minion and
 salt-master,
 and make the minion use `localhost` as it's master.
 
-`make salt` will symlink the `salt` directory to `/srv/salt`.
+`sudo make salt` will symlink the `salt` directory to `/srv/salt`.
 
-`make` or `make all` will do all of the above.
+`sudo make` or `sudo make all` will do all of the above.
 
 Or you can always just copy the states you want to your salt directory.
 
 ## Available States
 
-`state.highstate` will add all of the bad stuff.
+`sudo salt-call state.highstate` will add all of the bad stuff.
 For individual `state.sls` states, see the `salt` directory.
 
 ## License
