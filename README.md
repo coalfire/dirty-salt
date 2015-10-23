@@ -32,6 +32,8 @@ Don't much maintenance on this project.
 ### Get it
 Spin up an older CentOS or RHEL release -- CentOS 5.4 is what I have used.
 
+`sudo yum -y install git` (if necessary)
+
 `git clone https://github.com/coalfire/dirty-salt`
 
 If you have chosen a sufficiently out of date distro, 
