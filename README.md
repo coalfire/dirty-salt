@@ -1,5 +1,7 @@
 # dirty-salt
 
+## Introduction
+
 A set of [salt-states](https://docs.saltstack.com/en/latest/topics/index.html)
 for making a very insecure operating system.
 
@@ -27,6 +29,7 @@ Don't much maintenance on this project.
 
 ## Installation
 
+### Get it
 Spin up an older CentOS or RHEL release -- CentOS 5.4 is what I have used.
 
 `git clone https://github.com/coalfire/dirty-salt`
@@ -42,6 +45,8 @@ and try again.
 Alternately, 
 `export GIT_SSL_NO_VERIFY=1; git clone https://github.com/coalfire/dirty-salt`
 *should* work, but I have not tested this.
+
+### Install it
 
 `cd dirty-salt`
 
