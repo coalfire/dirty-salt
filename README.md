@@ -36,7 +36,12 @@ you may be unable to clone due to outdated certs.
 If so, `yum --showduplicates list openssl` to find what versions of openssl
 are available. 
 Install a slightly newer one with, eg:
-`yum install openssl-<new-version>`.
+`yum install openssl-0.9.8e-27.el5_10.4`,
+and try again.
+
+Alternately, 
+`export GIT_SSL_NO_VERIFY=1; git clone https://github.com/coalfire/dirty-salt`
+*should* work, but I have not tested this.
 
 `cd dirty-salt`
 
