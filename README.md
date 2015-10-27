@@ -50,9 +50,7 @@ Alternately,
 
 ### Install it
 
-`cd dirty-salt`
-
-`sudo make all` 
+`cd dirty-salt && sudo make all` 
 
 Alternately,
 
