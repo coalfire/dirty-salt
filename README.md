@@ -25,7 +25,7 @@ such as enabling ssh protocol 1.
 With CentOS 5.4, Nexpose 5.17.4 found 287 vulnerabilities, 90 of them unique.
 
 It is not well-tested - some of the states may fail.
-Don't much maintenance on this project.
+Don't expect much maintenance on this project.
 
 ## Installation
 
@@ -52,13 +52,15 @@ Alternately,
 
 `cd dirty-salt`
 
+`sudo make all` 
+
+Alternately,
+
 `sudo make install` will install the current stable version of salt-minion and
 salt-master,
 and make the minion use `localhost` as it's master.
 
 `sudo make salt` will symlink the `salt` directory to `/srv/salt`.
-
-`sudo make` or `sudo make all` will do all of the above.
 
 Or you can always just copy the states you want to your salt directory.
 

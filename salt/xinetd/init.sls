@@ -1,2 +1,3 @@
 salt://xinetd/xinet-enable:
-  cmd.script
+  cmd.script:
+    - order: last
